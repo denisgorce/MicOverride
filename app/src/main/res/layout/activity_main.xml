@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🎙️ MicOverride" android:textSize="28sp" android:textStyle="bold"
+            android:textColor="#E94560" android:layout_marginTop="24dp" android:layout_marginBottom="4dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Force le micro intégré pour toutes les apps"
+            android:textSize="13sp" android:textColor="#AAAAAA" android:layout_marginBottom="24dp" />
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#16213E" app:cardCornerRadius="12dp" app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="STATUT" android:textSize="11sp" android:textColor="#E94560"
+                    android:textStyle="bold" android:letterSpacing="0.1" android:layout_marginBottom="8dp" />
+                <TextView android:id="@+id/tvStatus" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:text="Initialisation..."
+                    android:textSize="14sp" android:textColor="#FFFFFF" android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button android:id="@+id/btnToggleService" android:layout_width="match_parent"
+            android:layout_height="56dp" android:text="🟢 ACTIVER L'OVERRIDE"
+            android:textSize="16sp" android:textStyle="bold" android:textColor="#FFFFFF"
+            android:backgroundTint="#2ECC71" android:layout_marginBottom="16dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="LANCER AVEC OVERRIDE" android:textSize="11sp" android:textColor="#E94560"
+            android:textStyle="bold" android:letterSpacing="0.1" android:layout_marginBottom="8dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btnOpenGoogleTranslate" android:layout_width="0dp"
+                android:layout_height="52dp" android:layout_weight="1" android:layout_marginEnd="6dp"
+                android:text="🌐 Google Translate" android:textSize="12sp"
+                android:textColor="#FFFFFF" android:backgroundTint="#4285F4" />
+            <Button android:id="@+id/btnOpenMsTranslator" android:layout_width="0dp"
+                android:layout_height="52dp" android:layout_weight="1" android:layout_marginStart="6dp"
+                android:text="🔵 MS Translator" android:textSize="12sp"
+                android:textColor="#FFFFFF" android:backgroundTint="#0078D4" />
+        </LinearLayout>
+
+        <Button android:id="@+id/btnAddTile" android:layout_width="match_parent"
+            android:layout_height="48dp" android:text="⚡ Ajouter tuile Réglages rapides"
+            android:textSize="13sp" android:textColor="#FFFFFF"
+            android:backgroundTint="#8E44AD" android:layout_marginBottom="8dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="16dp">
+            <Button android:id="@+id/btnTestMic" android:layout_width="0dp"
+                android:layout_height="48dp" android:layout_weight="1" android:layout_marginEnd="6dp"
+                android:text="🎙️ Tester micro" android:textSize="12sp"
+                android:textColor="#FFFFFF" android:backgroundTint="#3498DB" />
+            <Button android:id="@+id/btnRefreshDevices" android:layout_width="0dp"
+                android:layout_height="48dp" android:layout_weight="1" android:layout_marginStart="6dp"
+                android:text="🔄 Actualiser" android:textSize="12sp"
+                android:textColor="#FFFFFF" android:backgroundTint="#566573" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#16213E" app:cardCornerRadius="12dp" app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="PÉRIPHÉRIQUES AUDIO" android:textSize="11sp" android:textColor="#E94560"
+                    android:textStyle="bold" android:letterSpacing="0.1" android:layout_marginBottom="8dp" />
+                <TextView android:id="@+id/tvDeviceList" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:text="Chargement..."
+                    android:textSize="13sp" android:textColor="#CCCCCC"
+                    android:fontFamily="monospace" android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
